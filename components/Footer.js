@@ -1,6 +1,6 @@
 const Footer = () => (
-    <footer className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-4 text-center">
-      <p>&copy; {new Date().getFullYear()} Botsa Poornima. All rights reserved.</p>
+    <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-gray-400 py-6 text-center text-sm">
+      <p>&copy; {new Date().getFullYear()} <span className="text-white font-medium">Botsa Poornima</span>. All rights reserved.</p>
     </footer>
   );
   

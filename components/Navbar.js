@@ -1,11 +1,26 @@
 const Navbar = () => (
-    <nav className="bg-gradient-to-r from-gray-900 to-black text-white p-4 shadow-md fixed w-full z-10">
-      <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-xl font-bold">Botsa Poornima</h1>
-        <div className="space-x-6 text-lg">
-          <a href="#about" className="hover:text-gray-300">About</a>
-          <a href="#projects" className="hover:text-gray-300">Projects</a>
-          <a href="#contact" className="hover:text-gray-300">Contact</a>
+    <nav className="bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white py-4 shadow-lg fixed w-full z-50">
+      <div className="container mx-auto flex justify-between items-center px-6">
+        <h1 className="text-2xl font-extrabold tracking-wide">Botsa Poornima</h1>
+        <div className="space-x-8 text-lg font-medium">
+          <a
+            href="#about"
+            className="hover:text-blue-400 transition duration-300 border-b-2 border-transparent hover:border-blue-400"
+          >
+            About
+          </a>
+          <a
+            href="#projects"
+            className="hover:text-blue-400 transition duration-300 border-b-2 border-transparent hover:border-blue-400"
+          >
+            Projects
+          </a>
+          <a
+            href="#contact"
+            className="hover:text-blue-400 transition duration-300 border-b-2 border-transparent hover:border-blue-400"
+          >
+            Contact
+          </a>
         </div>
       </div>
     </nav>
