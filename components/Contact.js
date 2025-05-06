@@ -5,7 +5,7 @@ const Contact = () => (
         Feel free to reach out for collaborations or inquiries. You can contact me via email or LinkedIn.
       </p>
       <div className="text-center space-y-4">
-        <p><strong>Email:</strong> botsavenkatasai@gmail.com</p>
+        <p><strong>Email:</strong> botsapoornima@gmail.com</p>
         <p><strong>Phone:</strong> +91 8317666170</p>
         <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/poornima-botsa-2a76442b5" className="text-blue-300 hover:text-blue-500">linkedin.com/in/poornima-botsa-2a76442b5</a></p>
       </div>

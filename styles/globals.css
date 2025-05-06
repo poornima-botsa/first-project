@@ -4,6 +4,14 @@
 @tailwind utilities;
 
 
+body {
+  @apply bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white;
+  background-image: url('/stars-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
