@@ -6,7 +6,7 @@ const About = () => (
           I'm a Computer Science student at RGUKT IIIT Etcherla, Srikakulam, currently pursuing my B.Tech in Computer Science Engineering. I am passionate about Full Stack Web Development and have hands-on experience building responsive websites and applications.
         </p>
         <p className="mt-4 text-lg text-gray-300">
-          Currently, I am working on projects that focus on building modern web applications using <span className="text-blue-400">React.js</span> and <span className="text-blue-400">Node.js</span>.
+          Currently, I am working on projects that focus on building modern web applications using <span className="text-blue-400">React.js</span> and <span className="text-blue-400">Bootstrap</span>.
         </p>
       </div>
     </section>
