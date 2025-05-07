@@ -1,40 +1,59 @@
 'use client';
-import Link from 'next/link';
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const handleToggle = () => setIsOpen(!isOpen);
+
+  const navLinks = [
+    { name: 'Home', href: '#home' },
+    { name: 'Skills', href: '#skills' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Certifications', href: '#certifications' },
+    { name: 'Contact', href: '#contact' },
+  ];
 
   return (
-    <nav className="bg-gradient-to-r from-gray-900 to-black text-white shadow-md sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-        <Link href="/">
-          <span className="text-2xl font-bold text-blue-400 hover:text-white transition duration-300">Poornima</span>
-        </Link>
-        <div className="hidden md:flex space-x-8 text-lg font-medium">
-          <Link href="#about" className="hover:text-blue-400 transition duration-300">About</Link>
-          <Link href="#projects" className="hover:text-blue-400 transition duration-300">Projects</Link>
-          <Link href="#contact" className="hover:text-blue-400 transition duration-300">Contact</Link>
+    <nav className="bg-gradient-to-r from-gray-900 via-gray-800 to-black shadow-lg sticky top-0 left-0 w-full z-50">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div className="text-white text-2xl font-bold tracking-wide">Poornima</div>
+
+        <div className="hidden md:flex space-x-8">
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              className="text-gray-300 hover:text-blue-400 transition duration-300 text-lg"
+            >
+              {link.name}
+            </a>
+          ))}
         </div>
 
-        {/* Mobile menu button */}
-        <button className="md:hidden" onClick={toggleMenu}>
-          {menuOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+        <div className="md:hidden">
+          <button
+            onClick={handleToggle}
+            className="text-gray-300 hover:text-white focus:outline-none"
+          >
+            <i className="fas fa-bars text-xl"></i>
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="md:hidden bg-gray-800 px-6 py-4 space-y-4 text-lg font-medium">
-          <Link href="#about" onClick={toggleMenu} className="block hover:text-blue-400">About</Link>
-          <Link href="#projects" onClick={toggleMenu} className="block hover:text-blue-400">Projects</Link>
-          <Link href="#contact" onClick={toggleMenu} className="block hover:text-blue-400">Contact</Link>
-          <Link href="#skills" onClick={toggleMenu} className="block hover:text-blue-400">Skills</Link>
-          <Link href="#strengths" onClick={toggleMenu} className="block hover:text-blue-400">Strengths</Link>
-          <Link href="#downloadresume" onClick={toggleMenu} className="block hover:text-blue-400">DownloadResume</Link>
+      {isOpen && (
+        <div className="md:hidden bg-gray-900 px-6 py-4 space-y-3">
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              className="block text-gray-300 hover:text-blue-400 transition duration-300"
+              onClick={() => setIsOpen(false)}
+            >
+              {link.name}
+            </a>
+          ))}
         </div>
       )}
     </nav>

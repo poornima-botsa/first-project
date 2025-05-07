@@ -1,5 +1,12 @@
-import "@/styles/globals.css";
+import '../styles/globals.css';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white min-h-screen">
+      <Component {...pageProps} />
+    </div>
+  );
 }
+
+export default MyApp;
