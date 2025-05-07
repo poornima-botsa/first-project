@@ -1,12 +1,12 @@
 const Skills = () => (
-    <section className="mb-8">
-      <h4 className="text-2xl font-semibold text-blue-600 mb-2">Technical Skills</h4>
-      <ul className="list-disc list-inside">
-        <li><strong>Programming Languages:</strong> Java, Python, C, C++</li>
-        <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React.js, Bootstrap</li>
-        <li><strong>Backend:</strong> Node.js, PHP, MySQL</li>
-        <li><strong>Database:</strong> SQL</li>
-        <li><strong>Tools & Platforms:</strong> Git & GitHub, VS Code, Netlify, XAMPP</li>
+    <section className="bg-white p-8 rounded-lg shadow-lg mb-8">
+      <h4 className="text-3xl font-semibold text-blue-600 mb-6 text-center">Technical Skills</h4>
+      <ul className="space-y-4 text-lg text-gray-700">
+        <li><span className="font-semibold text-blue-500">Programming Languages:</span> Java, Python, C, C++</li>
+        <li><span className="font-semibold text-blue-500">Frontend:</span> HTML, CSS, JavaScript, React.js, Bootstrap</li>
+        <li><span className="font-semibold text-blue-500">Backend:</span> Node.js, PHP, MySQL</li>
+        <li><span className="font-semibold text-blue-500">Database:</span> SQL</li>
+        <li><span className="font-semibold text-blue-500">Tools & Platforms:</span> Git & GitHub, VS Code, Netlify, XAMPP</li>
       </ul>
     </section>
   );
