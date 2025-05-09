@@ -6,7 +6,7 @@ const Projects = () => {
       description:
         'A fully responsive and dynamic website for RHYNO Electric Vehicles, built using React.js and Bootstrap.',
       tech: ['React.js', 'Bootstrap', 'CSS', 'Responsive Design'],
-      // link: 'https://rhvno-ev-site.vercel.app',
+      link: '#',
     },
     {
       title: 'Portfolio Website',
