@@ -5,7 +5,7 @@ import Skills from "../components/Skills";
 import Strengths from "../components/Strengths";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
-//import DownloadResume from "../components/DownloadResume";
+import DownloadResume from "../components/DownloadResume";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
       <Strengths />
       <Projects />
       <Contact />
-      {/* <DownloadResume /> */}
+      <DownloadResume />
       <Footer />
     </>
   );
