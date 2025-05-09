@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,11 +12,20 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Form submitted');
+  
+    emailjs.sendForm('service_03y5ffl', 'template_3cazhpa', e.target, 'U3nmC8Xl--va8EPqO')
+      .then((result) => {
+        alert('Message sent successfully!');
+        setFormData({ name: '', email: '', message: '' }); // Reset the form
+      }, (error) => {
+        alert('Error sending message, please try again later.');
+      });
   };
-
+  
   return (
     <section id="contact" className="py-20 px-8 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
       <div className="container mx-auto max-w-3xl">
