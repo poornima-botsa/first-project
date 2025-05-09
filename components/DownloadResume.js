@@ -12,3 +12,4 @@ const DownloadResume = () => (
     </section>
   );
   
+  export default DownloadResume;

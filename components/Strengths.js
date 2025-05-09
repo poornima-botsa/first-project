@@ -12,3 +12,4 @@ const Strengths = () => (
     </section>
   );
   
+  export default Strengths;
