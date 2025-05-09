@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Skills from "../components/Skills";
-// import Strengths from "../components/Strengths";
+import Strengths from "../components/Strengths";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 //import DownloadResume from "../components/DownloadResume";
@@ -15,7 +15,7 @@ export default function Home() {
       <Hero />
       <About />
       <Skills />
-      {/*<Strengths /> */}
+      <Strengths />
       <Projects />
       <Contact />
       {/* <DownloadResume /> */}
