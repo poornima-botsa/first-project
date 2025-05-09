@@ -1,4 +1,5 @@
-const DownloadResume = () => (
+const DownloadResume = () => {
+  return (
     <section id="downloadresume" className="py-16 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
       <div className="max-w-5xl mx-auto flex justify-center">
         <a
@@ -11,5 +12,5 @@ const DownloadResume = () => (
       </div>
     </section>
   );
-  
+};
   export default DownloadResume;

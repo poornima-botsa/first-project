@@ -1,4 +1,5 @@
-const Skills = () => (
+const Skills = () => {
+  return(
     <section id="skills" className="py-16 px-6 bg-gradient-to-bl from-gray-900 via-gray-800 to-black text-white">
       <div className="max-w-5xl mx-auto bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl shadow-2xl">
         <h2 className="text-3xl font-extrabold text-purple-400 mb-6 text-center">Technical Skills</h2>
@@ -12,5 +13,5 @@ const Skills = () => (
       </div>
     </section>
   );
-  
+};
   export default Skills;

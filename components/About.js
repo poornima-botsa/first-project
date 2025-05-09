@@ -1,4 +1,5 @@
-const About = () => (
+const About = () => {
+  return(
   <section id="about" className="py-16 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
     <div className="max-w-5xl mx-auto bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl shadow-2xl">
       <h2 className="text-4xl font-extrabold text-blue-400 mb-6 text-center">About Me</h2>
@@ -11,5 +12,5 @@ const About = () => (
     </div>
   </section>
 );
-
+};
 export default About;
